@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Ganesh Festival</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #fff8f0;
+            color: #333;
+        }
+
+        /* Navbar */
+        nav {
+            background: #138a36;
+            padding: 15px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        /* Header */
+        .contact-header {
+            text-align: center;
+            padding: 55px 20px 35px;
+            background: linear-gradient(135deg, #ca6eb4, #ffb300);
+            color: white;
+        }
+
+        .contact-header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .contact-header p {
+            font-size: 18px;
+        }
+
+        /* Main */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 45px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+        }
+
+        /* Contact Information */
+        .contact-info {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .contact-info h2 {
+            color: #138a36;
+            margin-bottom: 25px;
+        }
+
+        .info-box {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .icon {
+            font-size: 28px;
+        }
+
+        .info-box h3 {
+            color: #e65100;
+            margin-bottom: 5px;
+        }
+
+        .info-box p {
+            line-height: 1.6;
+        }
+
+        /* Form */
+        .contact-form {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .contact-form h2 {
+            color: #138a36;
+            margin-bottom: 25px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 13px;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        .contact-form textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #e573cc;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: #138a36;
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background: #0d6b29;
+        }
+
+        /* Map */
+        .map-section {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto 50px;
+            text-align: center;
+        }
+
+        .map-section h2 {
+            color: #138a36;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        .map-section iframe {
+            width: 100%;
+            height: 350px;
+            border: 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        /* Map Button */
+        .map-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 13px 25px;
+            background: #ff7a00;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .map-btn:hover {
+            background: #e65c00;
+        }
+
+        /* Footer */
+        footer {
+            background: #138a36;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 6px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .contact-header h1 {
+                font-size: 32px;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .map-section iframe {
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">🙏 Ganesh Festival</div>
+
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="event.html">Events</a></li>
+            
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Contact Header -->
+    <section class="contact-header">
+        <h1>Contact Us</h1>
+        <p>Get in touch with us for the Ganesh Festival celebrations 🙏</p>
+    </section>
+
+
+    <!-- Contact Container -->
+    <section class="container">
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+
+            <h2>📍 Festival Information</h2>
+
+            <div class="info-box">
+                <div class="icon">🏫</div>
+                <div>
+                    <h3>Venue</h3>
+                    <p>
+                        G. H. Raisoni College,<br>
+                        Wagholi, Pune, Maharashtra
+                    </p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <div class="icon">📍</div>
+                <div>
+                    <h3>Location</h3>
+                    <p>
+                        G. H. Raisoni College,<br>
+                        Wagholi, Pune – 412207
+                    </p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <div class="icon">📞</div>
+                <div>
+                    <h3>Phone</h3>
+                    <p>
+                        +91 XXXXX XXXXX
+                    </p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <div class="icon">📧</div>
+                <div>
+                    <h3>Email</h3>
+                    <p>
+                        ganeshfestival@example.com
+                    </p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <div class="icon">🕉️</div>
+                <div>
+                    <h3>Festival</h3>
+                    <p>
+                        Ganesh Chaturthi Celebration<br>
+                        Cultural Programs & Events
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+
+            <h2>💬 Send Us a Message</h2>
+
+            <form id="contactForm">
+
+                <label for="name">Your Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter your phone number"
+                >
+
+                <label for="message">Message</label>
+                <textarea
+                    id="message"
+                    placeholder="Write your message..."
+                    required
+                ></textarea>
+
+                <button type="submit" class="submit-btn">
+                    Send Message 🙏
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Google Map -->
+    <section class="map-section">
+
+        <h2>📍 Find Us</h2>
+
+        <iframe
+            src="https://www.google.com/maps?q=G%20H%20Raisoni%20College%20Wagholi%20Pune&output=embed"
+            loading="lazy">
+        </iframe>
+
+        <br>
+
+        <a
+            href="https://www.google.com/maps/search/?api=1&query=G+H+Raisoni+College+Wagholi+Pune"
+            target="_blank"
+            class="map-btn">
+            🗺️ Open Location in Google Maps
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>🙏 Ganpati Bappa Morya 🙏</p>
+        <p>© 2026 Ganesh Festival | G. H. Raisoni College, Wagholi</p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            let name = document.getElementById("name").value;
+
+            alert(
+                "Thank you, " + name +
+                "! Your message has been received. 🙏"
+            );
+
+            document.getElementById("contactForm").reset();
+
+        });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,695 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | Festival Website</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f8fff8;
+            color: #333;
+        }
+
+        /* ================= NAVBAR ================= */
+
+        nav {
+            width: 100%;
+            background: #075b32;
+            padding: 15px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+        }
+
+        .logo {
+            color: white;
+            font-size: 25px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: #ffd54f;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #ffd54f;
+        }
+
+        /* ================= HERO ================= */
+
+        .about-hero {
+            min-height: 400px;
+            background:
+                linear-gradient(rgba(0,70,35,0.72), rgba(0,70,35,0.72)),
+                url("images/about.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .about-hero h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .about-hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* ================= ABOUT SECTION ================= */
+
+        .about-section {
+            padding: 80px 8%;
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .about-image {
+            flex: 1;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            transition: 0.4s;
+        }
+
+        .about-image img:hover {
+            transform: scale(1.03);
+        }
+
+        .about-content {
+            flex: 1;
+        }
+
+        .about-content h2 {
+            font-size: 34px;
+            color: #075b32;
+            margin-bottom: 20px;
+        }
+
+        .about-content h2 span {
+            color: #e67e22;
+        }
+
+        .about-content p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        /* ================= FESTIVAL CARDS ================= */
+
+        .festival-section {
+            padding: 70px 8%;
+            background: #eef8f0;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 34px;
+            color: #075b32;
+            margin-bottom: 10px;
+        }
+
+        .section-subtitle {
+            color: #666;
+            margin-bottom: 45px;
+        }
+
+        .festival-cards {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .festival-card {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.10);
+            transition: 0.4s;
+        }
+
+        .festival-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+        }
+
+        .festival-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .festival-card-content {
+            padding: 22px;
+        }
+
+        .festival-card h3 {
+            color: #075b32;
+            margin-bottom: 10px;
+        }
+
+        .festival-card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        /* ================= WHY US ================= */
+
+        .why-section {
+            padding: 80px 8%;
+            text-align: center;
+        }
+
+        .why-cards {
+            max-width: 1100px;
+            margin: 45px auto 0;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .why-card {
+            padding: 30px 20px;
+            border-radius: 15px;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .why-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .why-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .why-card h3 {
+            color: #075b32;
+            margin-bottom: 10px;
+        }
+
+        .why-card p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #064a29;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer h3 {
+            margin-bottom: 10px;
+            font-size: 23px;
+        }
+
+        footer p {
+            color: #d9eadf;
+            font-size: 14px;
+            margin: 5px;
+        }
+
+        .social-links {
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        .social-links a:hover {
+            color: #ffd54f;
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 900px) {
+
+            .about-container {
+                flex-direction: column;
+            }
+
+            .festival-cards {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .why-cards {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .about-hero h1 {
+                font-size: 40px;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            nav {
+                padding: 15px 5%;
+            }
+
+            .nav-links {
+                gap: 12px;
+            }
+
+            .nav-links a {
+                font-size: 12px;
+            }
+
+            .about-hero {
+                min-height: 330px;
+            }
+
+            .about-hero h1 {
+                font-size: 32px;
+            }
+
+            .about-hero p {
+                font-size: 14px;
+            }
+
+            .festival-cards,
+            .why-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .about-section {
+                padding: 50px 6%;
+            }
+
+            .about-content h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+
+        <a href="Home.html" class="logo">
+            Festi<span>Vibe</span>
+        </a>
+
+        <ul class="nav-links">
+            <li>
+                <a href="Home.html">Home</a>
+            </li>
+
+            <li>
+                <a href="about.html" class="active">About</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="about-hero">
+
+        <div>
+            <h1>About Our Festivals</h1>
+
+            <p>
+                Celebrating culture, traditions, colours and happiness
+                together with unforgettable festival experiences.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about-section">
+
+        <div class="about-container">
+
+            <div class="about-image">
+
+                <!-- CHANGE IMAGE NAME HERE -->
+                <img src="Images/celebration.jpg"
+                     alt="Festival Celebration">
+
+            </div>
+
+
+            <div class="about-content">
+
+                <h2>
+                    Celebrating <span>Culture & Tradition</span>
+                </h2>
+
+                <p>
+                    Festivals are an important part of our culture and
+                    bring people together with happiness, love and unity.
+                </p>
+
+                <p>
+                    Our festival website is created to provide information
+                    about different festivals, their traditions, history,
+                    celebrations and cultural importance.
+                </p>
+
+                <p>
+                    From colourful decorations and traditional food to
+                    music, dance and family gatherings, every festival
+                    creates beautiful memories.
+                </p>
+
+                <p>
+                    Our goal is to make festival information simple,
+                    attractive and easy for everyone to explore.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FESTIVALS ================= -->
+
+    <section class="festival-section">
+
+        <h2 class="section-title">
+            Our Popular Festivals
+        </h2>
+
+        <p class="section-subtitle">
+            Discover the beauty and traditions behind India's celebrations.
+        </p>
+
+
+        <div class="festival-cards">
+
+            <!-- CARD 1 -->
+
+            <div class="festival-card">
+
+                <!-- CHANGE IMAGE NAME HERE -->
+                <img src="Images/diwali.jpg"
+                     alt="Diwali Festival">
+
+                <div class="festival-card-content">
+
+                    <h3>🪔 Diwali</h3>
+
+                    <p>
+                        Diwali is the festival of lights, celebrated
+                        with lamps, sweets, decorations and family
+                        gatherings.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+
+            <div class="festival-card">
+
+                <!-- CHANGE IMAGE NAME HERE -->
+                <img src="Images/ganesh2.jpg"
+                     alt="Ganesh Festival">
+
+                <div class="festival-card-content">
+
+                    <h3>🐘 Ganesh Chaturthi</h3>
+
+                    <p>
+                        Ganesh Chaturthi celebrates Lord Ganesha with
+                        beautiful decorations, prayers, music and
+                        cultural events.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+
+            <div class="festival-card">
+
+                <!-- CHANGE IMAGE NAME HERE -->
+                <img src="Images/holi.jpg"
+                     alt="Holi Festival">
+
+                <div class="festival-card-content">
+
+                    <h3>🎨 Holi</h3>
+
+                    <p>
+                        Holi is the festival of colours where people
+                        celebrate friendship, happiness and togetherness.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WHY FESTIVALS ================= -->
+
+    <section class="why-section">
+
+        <h2 class="section-title">
+            Why Festivals Matter
+        </h2>
+
+        <p class="section-subtitle">
+            Festivals connect generations and keep our traditions alive.
+        </p>
+
+
+        <div class="why-cards">
+
+            <div class="why-card">
+
+                <div class="why-icon">❤️</div>
+
+                <h3>Unity</h3>
+
+                <p>
+                    Festivals bring families, friends and communities
+                    together.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-icon">🏛️</div>
+
+                <h3>Culture</h3>
+
+                <p>
+                    They help us understand and preserve our cultural
+                    traditions.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-icon">🎉</div>
+
+                <h3>Happiness</h3>
+
+                <p>
+                    Celebrations create joyful moments and beautiful
+                    memories.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-icon">🌱</div>
+
+                <h3>Tradition</h3>
+
+                <p>
+                    Festivals pass valuable traditions from one
+                    generation to another.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>FestiVibe</h3>
+
+        <p>
+            Celebrating festivals, culture and traditions together.
+        </p>
+
+        <p>
+            © 2026 FestiVibe. All Rights Reserved.
+        </p>
+
+        <div class="social-links">
+
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">YouTube</a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        // Highlight active navigation link
+        const links = document.querySelectorAll(".nav-links a");
+
+        links.forEach(link => {
+
+            link.addEventListener("click", function() {
+
+                links.forEach(item => {
+                    item.classList.remove("active");
+                });
+
+                this.classList.add("active");
+
+            });
+
+        });
+
+
+        // Simple scroll animation
+        const cards = document.querySelectorAll(
+            ".festival-card, .why-card"
+        );
+
+        const observer = new IntersectionObserver(
+            entries => {
+
+                entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.style.opacity = "1";
+                        entry.target.style.transform =
+                            "translateY(0)";
+
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.15
+            }
+        );
+
+
+        cards.forEach(card => {
+
+            card.style.opacity = "0";
+            card.style.transform = "translateY(30px)";
+            card.style.transition = "all 0.6s ease";
+
+            observer.observe(card);
+
+        });
+
+    </script>
+
+</body>
+</html>

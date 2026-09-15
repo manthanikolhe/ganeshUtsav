@@ -1,0 +1,1719 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Utsav 2026 | Ganesh Festival & Engineering Day</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+
+        /* =========================
+           GENERAL
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #fffaf5;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(35, 35, 35, 0.96);
+            box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+        }
+
+        .nav-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            height: 75px;
+        }
+
+        .logo {
+            color: #ff9d38;
+            font-size: 25px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ff9d38;
+        }
+
+        .menu-btn {
+            display: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+
+        /* =========================
+           HERO SECTION
+        ========================= */
+
+        .hero {
+            min-height: 100vh;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.60),
+                    rgba(0,0,0,0.65)
+                ),
+                url("images/ganesh-hero.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            color: white;
+
+            padding: 100px 20px 50px;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .hero-small {
+            color: #ffb347;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 65px;
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #ff9d38;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: auto;
+            color: #f5f5f5;
+        }
+
+        .hero-buttons {
+            margin-top: 35px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: #ff8a30;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #e96d15;
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: #333;
+        }
+
+
+        /* =========================
+           SECTION COMMON
+        ========================= */
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .section-title h2 span {
+            color: #f07820;
+        }
+
+        .section-title p {
+            color: #777;
+            max-width: 650px;
+            margin: auto;
+        }
+
+
+        /* =========================
+           WELCOME
+        ========================= */
+
+        .welcome {
+            background: white;
+        }
+
+        .welcome-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .welcome-text h2 {
+            font-size: 36px;
+            margin-bottom: 18px;
+        }
+
+        .welcome-text h2 span {
+            color: #f07820;
+        }
+
+        .welcome-text p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .welcome-image {
+            height: 360px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .welcome-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        /* =========================
+           FESTIVAL CARDS
+        ========================= */
+
+        .events-section {
+            background: #fff7ef;
+        }
+
+        .event-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .event-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: 0.4s;
+        }
+
+        .event-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .event-card-image {
+            height: 230px;
+            overflow: hidden;
+        }
+
+        .event-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .event-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .event-card-content {
+            padding: 25px;
+        }
+
+        .event-card-content h3 {
+            font-size: 25px;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .event-card-content p {
+            color: #666;
+            margin-bottom: 18px;
+        }
+
+        .card-link {
+            color: #ed741d;
+            font-weight: 600;
+        }
+
+
+        /* =========================
+           HIGHLIGHTS
+        ========================= */
+
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .highlight-card {
+            padding: 30px 20px;
+            background: white;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .highlight-icon {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .highlight-card h3 {
+            font-size: 19px;
+            margin-bottom: 8px;
+        }
+
+        .highlight-card p {
+            color: #777;
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           SCHEDULE
+        ========================= */
+
+        .schedule {
+            background: #202b2d;
+            color: white;
+        }
+
+        .schedule .section-title h2 {
+            color: white;
+        }
+
+        .schedule .section-title p {
+            color: #ccc;
+        }
+
+        .schedule-list {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .schedule-item {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+
+            padding: 20px;
+            margin-bottom: 15px;
+
+            border-radius: 12px;
+            background: rgba(255,255,255,0.08);
+
+            transition: 0.3s;
+        }
+
+        .schedule-item:hover {
+            background: rgba(255,255,255,0.14);
+            transform: translateX(5px);
+        }
+
+        .time {
+            min-width: 120px;
+            color: #ff9d38;
+            font-weight: 700;
+        }
+
+        .schedule-info h3 {
+            font-size: 18px;
+            margin-bottom: 3px;
+        }
+
+        .schedule-info p {
+            color: #bbb;
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           COUNTDOWN
+        ========================= */
+
+        .countdown-section {
+            background: #fff;
+            text-align: center;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .count-box {
+            min-width: 110px;
+            padding: 20px;
+            background: #fff5e9;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .count-box h3 {
+            font-size: 35px;
+            color: #ed741d;
+        }
+
+        .count-box p {
+            color: #777;
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           CTA
+        ========================= */
+
+        .cta {
+            background:
+                linear-gradient(
+                    135deg,
+                    #f07820,
+                    #ff9f43
+                );
+
+            color: white;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 38px;
+            margin-bottom: 12px;
+        }
+
+        .cta p {
+            max-width: 650px;
+            margin: 0 auto 25px;
+        }
+
+        .cta .btn {
+            background: white;
+            color: #ed741d;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #161d1e;
+            color: white;
+            padding: 45px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .footer-logo {
+            color: #ff9d38;
+            font-size: 25px;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        footer p {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        footer h3 {
+            margin-bottom: 15px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links a {
+            color: #aaa;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #ff9d38;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #333;
+            margin-top: 35px;
+            padding-top: 20px;
+            color: #888;
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           MODAL
+        ========================= */
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            inset: 0;
+
+            background: rgba(0,0,0,0.7);
+
+            align-items: center;
+            justify-content: center;
+
+            padding: 20px;
+        }
+
+        .modal-content {
+            background: white;
+            max-width: 450px;
+            width: 100%;
+            padding: 35px;
+            border-radius: 20px;
+            text-align: center;
+            position: relative;
+            animation: popup 0.3s ease;
+        }
+
+        @keyframes popup {
+            from {
+                transform: scale(0.7);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .close {
+            position: absolute;
+            right: 20px;
+            top: 12px;
+
+            font-size: 28px;
+            cursor: pointer;
+            color: #555;
+        }
+
+        .modal-content h2 {
+            color: #ed741d;
+            margin-bottom: 10px;
+        }
+
+        .modal-content input {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        .modal-content button {
+            width: 100%;
+            margin-top: 12px;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media(max-width: 900px) {
+
+            .hero h1 {
+                font-size: 48px;
+            }
+
+            .welcome-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .event-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .highlight-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+
+        @media(max-width: 700px) {
+
+            .menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+
+                position: absolute;
+                top: 75px;
+                left: 0;
+
+                width: 100%;
+                background: #222;
+
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                border-top: 1px solid #333;
+            }
+
+            .nav-links a {
+                display: block;
+                padding: 15px 25px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+            .section-title h2 {
+                font-size: 30px;
+            }
+
+            .highlight-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .schedule-item {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .count-box {
+                min-width: 85px;
+            }
+
+            .count-box h3 {
+                font-size: 27px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+
+    <nav>
+
+        <div class="nav-container">
+
+            <div class="logo">
+                Utsav <span>2026</span>
+            </div>
+
+            <div class="menu-btn" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="Home.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="event.html">Ganesh Festival</a>
+                </li>
+
+            
+
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="hero-small">
+                ✨ UTSAV 2026 ✨
+            </div>
+
+            <h1>
+                Celebrate Tradition &
+                <span>Inspire Innovation</span>
+            </h1>
+
+            <p>
+                A unique celebration bringing together the divine spirit
+                of Ganesh Festival and the creative energy of Engineering Day.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="event.html" class="btn btn-primary">
+                    Explore Events
+                </a>
+
+                <button class="btn btn-outline" onclick="openModal()">
+                    Register Now
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         WELCOME SECTION
+    ========================= -->
+
+    <section class="welcome">
+
+        <div class="container">
+
+            <div class="welcome-grid">
+
+                <div class="welcome-text">
+
+                    <h2>
+                        Welcome to <span>Utsav 2026</span>
+                    </h2>
+
+                    <p>
+                        Utsav 2026 is a special celebration where
+                        culture, creativity, technology and togetherness
+                        come together under one platform.
+                    </p>
+
+                    <p>
+                        Experience the joy of Ganesh Festival with
+                        traditional celebrations, cultural activities
+                        and eco-friendly initiatives.
+                    </p>
+
+                    <p>
+                        At the same time, explore the innovative side
+                        of engineering through project exhibitions,
+                        technology competitions and student innovations.
+                    </p>
+
+                    <a href="about.html" class="btn btn-primary">
+                        Know More
+                    </a>
+
+                </div>
+
+
+                <div class="welcome-image">
+
+                    <img
+                        src="Images/banner.jpg"
+                        alt="Utsav 2026 Celebration"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FESTIVAL SECTIONS
+    ========================= -->
+
+    <section class="events-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+                    Two Celebrations,
+                    <span>One Utsav</span>
+                </h2>
+
+                <p>
+                    Celebrate our culture and showcase the power
+                    of engineering and innovation.
+                </p>
+
+            </div>
+
+
+            <div class="event-grid">
+
+
+                <!-- Ganesh Festival -->
+
+                <div class="event-card">
+
+                    <div class="event-card-image">
+
+                        <img
+                            src="Images/ganesh2.jpg"
+                            alt="Ganesh Festival"
+                        >
+
+                    </div>
+
+                    <div class="event-card-content">
+
+                        <h3>
+                            🪔 Ganesh Festival
+                        </h3>
+
+                        <p>
+                            Experience devotion, tradition and
+                            togetherness through Ganpati Sthapana,
+                            cultural programs, aarti and eco-friendly
+                            celebrations.
+                        </p>
+
+                        <a
+                            href="event.html"
+                            class="card-link"
+                        >
+                            Explore Ganesh Festival →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Engineering Day -->
+
+                <div class="event-card">
+
+                    <div class="event-card-image">
+
+                        <img
+                            src="Images/engin.jpg"
+                            alt="Engineering Day"
+                        >
+
+                    </div>
+
+                    <div class="event-card-content">
+
+                        <h3>
+                            ⚙️ Engineering Day
+                        </h3>
+
+                        <p>
+                            Discover student projects, innovative
+                            ideas, technology exhibitions, quizzes
+                            and exciting engineering challenges.
+                        </p>
+
+                       
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         HIGHLIGHTS
+    ========================= -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+                    Event <span>Highlights</span>
+                </h2>
+
+                <p>
+                    Something exciting for everyone.
+                </p>
+
+            </div>
+
+
+            <div class="highlight-grid">
+
+
+                <div class="highlight-card">
+
+                    <div class="highlight-icon">
+                        🪔
+                    </div>
+
+                    <h3>
+                        Ganpati Sthapana
+                    </h3>
+
+                    <p>
+                        Begin the celebration with
+                        devotion and positivity.
+                    </p>
+
+                </div>
+
+
+                <div class="highlight-card">
+
+                    <div class="highlight-icon">
+                        🌱
+                    </div>
+
+                    <h3>
+                        Eco Celebration
+                    </h3>
+
+                    <p>
+                        Promote creativity with
+                        environment-friendly celebrations.
+                    </p>
+
+                </div>
+
+
+                <div class="highlight-card">
+
+                    <div class="highlight-icon">
+                        💡
+                    </div>
+
+                    <h3>
+                        Innovation Expo
+                    </h3>
+
+                    <p>
+                        Explore creative engineering
+                        projects and ideas.
+                    </p>
+
+                </div>
+
+
+                <div class="highlight-card">
+
+                    <div class="highlight-icon">
+                        🏆
+                    </div>
+
+                    <h3>
+                        Competitions
+                    </h3>
+
+                    <p>
+                        Participate in quizzes,
+                        challenges and cultural activities.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         EVENT SCHEDULE
+    ========================= -->
+
+    <section class="schedule">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+                    Event <span>Schedule</span>
+                </h2>
+
+                <p>
+                    A glimpse of the exciting activities
+                    planned for Utsav 2026.
+                </p>
+
+            </div>
+
+
+            <div class="schedule-list">
+
+
+                <div class="schedule-item">
+
+                    <div class="time">
+                        09:00 AM
+                    </div>
+
+                    <div class="schedule-info">
+
+                        <h3>
+                            🪔 Ganesh Vandana
+                        </h3>
+
+                        <p>
+                            Traditional inauguration
+                            and Ganpati celebration.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="schedule-item">
+
+                    <div class="time">
+                        11:00 AM
+                    </div>
+
+                    <div class="schedule-info">
+
+                        <h3>
+                            💡 Innovation Expo
+                        </h3>
+
+                        <p>
+                            Student projects and
+                            innovative engineering ideas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="schedule-item">
+
+                    <div class="time">
+                        01:00 PM
+                    </div>
+
+                    <div class="schedule-info">
+
+                        <h3>
+                            🧠 Tech Quiz
+                        </h3>
+
+                        <p>
+                            Test your technical knowledge
+                            with an exciting quiz.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="schedule-item">
+
+                    <div class="time">
+                        03:00 PM
+                    </div>
+
+                    <div class="schedule-info">
+
+                        <h3>
+                            🎯 Fun Challenges
+                        </h3>
+
+                        <p>
+                            Interactive games and
+                            engineering challenges.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="schedule-item">
+
+                    <div class="time">
+                        06:00 PM
+                    </div>
+
+                    <div class="schedule-info">
+
+                        <h3>
+                            🎶 Cultural Evening
+                        </h3>
+
+                        <p>
+                            Music, dance and cultural
+                            performances.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="schedule-item">
+
+                    <div class="time">
+                        08:00 PM
+                    </div>
+
+                    <div class="schedule-info">
+
+                        <h3>
+                            🙏 Grand Aarti
+                        </h3>
+
+                        <p>
+                            End the celebration with
+                            a beautiful Ganesh Aarti.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         COUNTDOWN
+    ========================= -->
+
+    <section class="countdown-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+                    Countdown to <span>Utsav 2026</span>
+                </h2>
+
+                <p>
+                    Get ready for the celebration!
+                </p>
+
+            </div>
+
+
+            <div class="countdown">
+
+                <div class="count-box">
+
+                    <h3 id="days">
+                        00
+                    </h3>
+
+                    <p>
+                        Days
+                    </p>
+
+                </div>
+
+
+                <div class="count-box">
+
+                    <h3 id="hours">
+                        00
+                    </h3>
+
+                    <p>
+                        Hours
+                    </p>
+
+                </div>
+
+
+                <div class="count-box">
+
+                    <h3 id="minutes">
+                        00
+                    </h3>
+
+                    <p>
+                        Minutes
+                    </p>
+
+                </div>
+
+
+                <div class="count-box">
+
+                    <h3 id="seconds">
+                        00
+                    </h3>
+
+                    <p>
+                        Seconds
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CTA
+    ========================= -->
+
+    <section class="cta">
+
+        <div class="container">
+
+            <h2>
+                Be Part of Utsav 2026
+            </h2>
+
+            <p>
+                Celebrate tradition, showcase innovation,
+                create memories and experience the spirit
+                of togetherness.
+            </p>
+
+            <button
+                class="btn"
+                onclick="openModal()"
+            >
+                Register Now
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+
+                <div>
+
+                    <div class="footer-logo">
+                        Utsav 2026
+                    </div>
+
+                    <p>
+                        Celebrating the perfect blend of
+                        tradition, culture, engineering
+                        and innovation.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Quick Links
+                    </h3>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="ganesh.html">
+                                Ganesh Festival
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="engineering.html">
+                                Engineering Day
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Contact
+                    </h3>
+
+                    <p>
+                        📍G. H. Raisoni,Wagholi,Pune College Campus
+                    </p>
+
+                    <p>
+                        📧 utsav2026@example.com
+                    </p>
+
+                    <p>
+                        📞 +91 98765 43210
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="copyright">
+
+                © 2026 Utsav 2026. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         REGISTER MODAL
+    ========================= -->
+
+    <div class="modal" id="registerModal">
+
+        <div class="modal-content">
+
+            <span
+                class="close"
+                onclick="closeModal()"
+            >
+                &times;
+            </span>
+
+            <h2>
+                Register for Utsav 2026
+            </h2>
+
+            <p>
+                Join us and be part of the celebration!
+            </p>
+
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+            >
+
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+            >
+
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Enter your phone number"
+            >
+
+
+            <button
+                class="btn btn-primary"
+                onclick="registerUser()"
+            >
+                Submit Registration
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================= -->
+
+    <script>
+
+        /* =========================
+           MOBILE MENU
+        ========================= */
+
+        function toggleMenu() {
+
+            const navLinks =
+                document.getElementById("navLinks");
+
+            navLinks.classList.toggle("active");
+
+        }
+
+
+        /* =========================
+           MODAL
+        ========================= */
+
+        function openModal() {
+
+            document.getElementById("registerModal").style.display =
+                "flex";
+
+        }
+
+
+        function closeModal() {
+
+            document.getElementById("registerModal").style.display =
+                "none";
+
+        }
+
+
+        /* Close modal when clicking outside */
+
+        window.onclick = function(event) {
+
+            const modal =
+                document.getElementById("registerModal");
+
+            if (event.target === modal) {
+
+                modal.style.display = "none";
+
+            }
+
+        };
+
+
+        /* =========================
+           REGISTRATION
+        ========================= */
+
+        function registerUser() {
+
+            const name =
+                document.getElementById("name").value.trim();
+
+            const email =
+                document.getElementById("email").value.trim();
+
+            const phone =
+                document.getElementById("phone").value.trim();
+
+
+            if (
+                name === "" ||
+                email === "" ||
+                phone === ""
+            ) {
+
+                alert("Please fill all the fields.");
+
+                return;
+
+            }
+
+
+            alert(
+                "Thank you, " +
+                name +
+                "! Your registration for Utsav 2026 has been received."
+            );
+
+
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("phone").value = "";
+
+            closeModal();
+
+        }
+
+
+        /* =========================
+           COUNTDOWN
+        ========================= */
+
+        const eventDate =
+            new Date("September 25, 2026 09:00:00").getTime();
+
+
+        function updateCountdown() {
+
+            const now =
+                new Date().getTime();
+
+            const difference =
+                eventDate - now;
+
+
+            if (difference <= 0) {
+
+                document.getElementById("days").innerText = "00";
+                document.getElementById("hours").innerText = "00";
+                document.getElementById("minutes").innerText = "00";
+                document.getElementById("seconds").innerText = "00";
+
+                return;
+
+            }
+
+
+            const days =
+                Math.floor(
+                    difference /
+                    (1000 * 60 * 60 * 24)
+                );
+
+
+            const hours =
+                Math.floor(
+                    (difference %
+                        (1000 * 60 * 60 * 24)) /
+                    (1000 * 60 * 60)
+                );
+
+
+            const minutes =
+                Math.floor(
+                    (difference %
+                        (1000 * 60 * 60)) /
+                    (1000 * 60)
+                );
+
+
+            const seconds =
+                Math.floor(
+                    (difference %
+                        (1000 * 60)) /
+                    1000
+                );
+
+
+            document.getElementById("days").innerText =
+                String(days).padStart(2, "0");
+
+            document.getElementById("hours").innerText =
+                String(hours).padStart(2, "0");
+
+            document.getElementById("minutes").innerText =
+                String(minutes).padStart(2, "0");
+
+            document.getElementById("seconds").innerText =
+                String(seconds).padStart(2, "0");
+
+        }
+
+
+        updateCountdown();
+
+        setInterval(updateCountdown, 1000);
+
+
+        /* =========================
+           CLOSE MOBILE MENU
+           AFTER CLICKING LINK
+        ========================= */
+
+        document.querySelectorAll(".nav-links a")
+            .forEach(function(link) {
+
+                link.addEventListener("click", function() {
+
+                    document
+                        .getElementById("navLinks")
+                        .classList.remove("active");
+
+                });
+
+            });
+
+    </script>
+
+</body>
+</html>

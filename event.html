@@ -1,0 +1,755 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Events | Ganesh Festival</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #fff8f0;
+            color: #333;
+        }
+
+        /* ================= NAVBAR ================= */
+
+        nav {
+            background: #138a36;
+            padding: 15px 8%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        /* ================= HEADER ================= */
+
+        .event-header {
+            text-align: center;
+
+            padding: 60px 20px;
+
+            background: linear-gradient(
+                135deg,
+                #85c5de,
+                #edbae8
+            );
+
+            color: white;
+        }
+
+        .event-header h1 {
+            font-size: 45px;
+            margin-bottom: 12px;
+        }
+
+        .event-header p {
+            font-size: 18px;
+        }
+
+        /* ================= SECTION ================= */
+
+        .section {
+            width: 90%;
+            max-width: 1150px;
+
+            margin: 50px auto;
+        }
+
+        .section-title {
+            text-align: center;
+
+            color: #138a36;
+
+            font-size: 32px;
+
+            margin-bottom: 30px;
+        }
+
+        /* ================= EVENT CARDS ================= */
+
+        .event-container {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .event-card {
+            background: white;
+
+            padding: 25px;
+
+            border-radius: 15px;
+
+            text-align: center;
+
+            box-shadow:
+                0 5px 18px rgba(0,0,0,0.12);
+
+            transition: 0.3s;
+        }
+
+        .event-card:hover {
+            transform: translateY(-8px);
+
+            box-shadow:
+                0 10px 25px rgba(0,0,0,0.18);
+        }
+
+        .event-icon {
+            font-size: 50px;
+
+            margin-bottom: 15px;
+        }
+
+        .event-card h3 {
+            color: #e65100;
+
+            font-size: 22px;
+
+            margin-bottom: 10px;
+        }
+
+        .event-card p {
+            line-height: 1.6;
+
+            color: #555;
+        }
+
+        .event-info {
+            margin-top: 15px;
+
+            padding: 10px;
+
+            background: #f1f8f3;
+
+            border-radius: 8px;
+
+            color: #138a36;
+
+            font-weight: bold;
+        }
+
+        /* ================= TECHNICAL ================= */
+
+        .technical {
+            background: #f5fff7;
+
+            border-top: 5px solid #138a36;
+        }
+
+        /* ================= REGISTER BUTTON ================= */
+
+        .register-btn {
+            display: inline-block;
+
+            margin-top: 15px;
+
+            padding: 10px 20px;
+
+            background: #138a36;
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 7px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .register-btn:hover {
+            background: #0d6b29;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #138a36;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 25px;
+
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 6px;
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media(max-width: 900px) {
+
+            .event-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media(max-width: 600px) {
+
+            nav {
+                flex-direction: column;
+
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+
+                flex-wrap: wrap;
+
+                justify-content: center;
+            }
+
+            .event-header h1 {
+                font-size: 32px;
+            }
+
+            .event-container {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+
+        <div class="logo">
+            🙏 Ganesh Festival
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="Home.html">Home</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <li>
+                <a href="event.html">Events</a>
+            </li>
+
+        
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <section class="event-header">
+
+        <h1>🎉 Ganesh Festival Events</h1>
+
+        <p>
+            Celebrate • Compete • Create • Enjoy
+        </p>
+
+        <p>
+            G. H. Raisoni College, Wagholi, Pune
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= TECHNICAL EVENTS ================= -->
+
+    <section class="section technical">
+
+        <h2 class="section-title">
+            💻 Technical Events
+        </h2>
+
+
+        <div class="event-container">
+
+
+            <!-- Event 1 -->
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    💻
+                </div>
+
+                <h3>
+                    Coding Challenge
+                </h3>
+
+                <p>
+                    Test your programming skills by
+                    solving interesting coding problems
+                    within a limited time.
+                </p>
+
+                <div class="event-info">
+                    ⏱ Duration: 60 Minutes
+                </div>
+
+                <a href="#" class="register-btn">
+                    Register Now
+                </a>
+
+            </div>
+
+
+
+            <!-- Event 2 -->
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    🧠
+                </div>
+
+                <h3>
+                    Tech Quiz
+                </h3>
+
+                <p>
+                    Challenge yourself with questions
+                    related to technology, computers,
+                    AI and general knowledge.
+                </p>
+
+                <div class="event-info">
+                    👥 Team Event
+                </div>
+
+                <a href="#" class="register-btn">
+                    Register Now
+                </a>
+
+            </div>
+
+
+
+            <!-- Event 3 -->
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    🤖
+                </div>
+
+                <h3>
+                    AI Idea Challenge
+                </h3>
+
+                <p>
+                    Present your creative idea for
+                    using Artificial Intelligence to
+                    solve a real-world problem.
+                </p>
+
+                <div class="event-info">
+                    🎤 Presentation Event
+                </div>
+
+                <a href="#" class="register-btn">
+                    Register Now
+                </a>
+
+            </div>
+
+
+
+            <!-- Event 4 -->
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    🌐
+                </div>
+
+                <h3>
+                    Web Design Challenge
+                </h3>
+
+                <p>
+                    Design an attractive and creative
+                    webpage using HTML, CSS and
+                    JavaScript.
+                </p>
+
+                <div class="event-info">
+                    💻 Individual Event
+                </div>
+
+                <a href="#" class="register-btn">
+                    Register Now
+                </a>
+
+            </div>
+
+
+
+            <!-- Event 5 -->
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    🔐
+                </div>
+
+                <h3>
+                    Tech Treasure Hunt
+                </h3>
+
+                <p>
+                    Solve technical clues and puzzles
+                    to discover the hidden treasure.
+                </p>
+
+                <div class="event-info">
+                    👥 Team Event
+                </div>
+
+                <a href="#" class="register-btn">
+                    Register Now
+                </a>
+
+            </div>
+
+
+
+            <!-- Event 6 -->
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    ⚡
+                </div>
+
+                <h3>
+                    Debugging Challenge
+                </h3>
+
+                <p>
+                    Find and fix errors in the given
+                    programs and show your debugging
+                    skills.
+                </p>
+
+                <div class="event-info">
+                    ⏱ Time Based Event
+                </div>
+
+                <a href="#" class="register-btn">
+                    Register Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FUN GAMES ================= -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            🎮 Fun Games & Competitions
+        </h2>
+
+
+        <div class="event-container">
+
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    🎯
+                </div>
+
+                <h3>
+                    Target Challenge
+                </h3>
+
+                <p>
+                    Test your accuracy and concentration
+                    in this exciting target-based game.
+                </p>
+
+                <div class="event-info">
+                    🏆 Exciting Prizes
+                </div>
+
+            </div>
+
+
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    🏃
+                </div>
+
+                <h3>
+                    Fun Relay
+                </h3>
+
+                <p>
+                    A fun team relay competition filled
+                    with energy, teamwork and excitement.
+                </p>
+
+                <div class="event-info">
+                    👥 Team Event
+                </div>
+
+            </div>
+
+
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    🧩
+                </div>
+
+                <h3>
+                    Puzzle Challenge
+                </h3>
+
+                <p>
+                    Solve interesting puzzles and
+                    brain teasers against the clock.
+                </p>
+
+                <div class="event-info">
+                    🧠 Brain Game
+                </div>
+
+            </div>
+
+
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    🎈
+                </div>
+
+                <h3>
+                    Balloon Challenge
+                </h3>
+
+                <p>
+                    Enjoy a fun-filled balloon game
+                    with friends and classmates.
+                </p>
+
+                <div class="event-info">
+                    🎉 Fun Activity
+                </div>
+
+            </div>
+
+
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    🎵
+                </div>
+
+                <h3>
+                    Musical Game
+                </h3>
+
+                <p>
+                    Enjoy music, participate in fun
+                    rounds and compete with your friends.
+                </p>
+
+                <div class="event-info">
+                    🎶 Entertainment
+                </div>
+
+            </div>
+
+
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    🏆
+                </div>
+
+                <h3>
+                    Team Challenge
+                </h3>
+
+                <p>
+                    Work together with your team and
+                    complete exciting challenges.
+                </p>
+
+                <div class="event-info">
+                    🤝 Teamwork
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CULTURAL EVENTS ================= -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            🪔 Cultural Events
+        </h2>
+
+
+        <div class="event-container">
+
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    💃
+                </div>
+
+                <h3>
+                    Dance Competition
+                </h3>
+
+                <p>
+                    Showcase your talent and energy
+                    through dance performances.
+                </p>
+
+            </div>
+
+
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    🎤
+                </div>
+
+                <h3>
+                    Singing Competition
+                </h3>
+
+                <p>
+                    Share your voice and musical talent
+                    with everyone.
+                </p>
+
+            </div>
+
+
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    🎨
+                </div>
+
+                <h3>
+                    Rangoli Competition
+                </h3>
+
+                <p>
+                    Create beautiful and creative
+                    Ganesh-themed rangoli designs.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            🙏 Ganpati Bappa Morya 🙏
+        </p>
+
+        <p>
+            © 2026 Ganesh Festival |
+            G. H. Raisoni College, Wagholi
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
+
